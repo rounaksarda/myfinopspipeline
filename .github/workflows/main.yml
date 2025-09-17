@@ -6,7 +6,7 @@ on:
 
 jobs:
   shell-pipeline:
-    runs-on: [self-hosted, rhel-79]
+    runs-on: [ubuntu-latest]
 
     steps:
       - name: Checkout code
