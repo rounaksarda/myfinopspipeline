@@ -1,19 +1,1 @@
-name: Self-Hosted Runner Test
 
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  test-runner:
-    runs-on: self-hosted  # Make sure this matches the runner label in GitHub
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Run a simple script
-        run: echo "Hello Test"
-
-      - name: List files
-        run: ls -la
