@@ -12,12 +12,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install Node.js
-        run: |
-          curl -sL https://rpm.nodesource.com/setup_18.x | sudo bash -
-          sudo yum install -y nodejs
-          node -v
-          npm -v
+      # - name: Install Node.js
+      #   run: |
+      #     curl -sL https://rpm.nodesource.com/setup_18.x | sudo bash -
+      #     sudo yum install -y nodejs
+      #     node -v
+      #     npm -v
 
       - name: Build step (create a file)
         run: |
